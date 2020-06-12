@@ -8,6 +8,7 @@ import { Map, TileLayer, Marker } from "react-leaflet";
 import api from "../../services/api";
 import { LeafletMouseEvent } from "leaflet";
 import axios from "axios";
+import Dropzone from "../../components/Dropzone";
 interface Item {
   id: number;
   name: string;
@@ -40,6 +41,7 @@ const CreatePoints = () => {
     0,
     0,
   ]);
+  const [selectedFile, setselectdFile] = useState<File>();
   const History = useHistory();
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -105,16 +107,20 @@ const CreatePoints = () => {
     const city = selectedcity;
     const [latitude, longitude] = selectedPosition;
     const items = selectedItens;
-    const data = {
-      name,
-      email,
-      whatsapp,
-      uf,
-      city,
-      latitude,
-      longitude,
-      items,
-    };
+    const data = new FormData();
+
+    data.append("name", name);
+    data.append("email", email);
+    data.append("whatsapp", whatsapp);
+    data.append("uf", uf);
+    data.append("city", city);
+    data.append("latitude", String(latitude));
+    data.append("longitude", String(longitude));
+    data.append("items", items.join(","));
+    if (selectedFile) {
+      data.append("image", selectedFile);
+    }
+
     console.log(items);
     await api.post("points", data);
     alert("Ponto de coleta criado");
@@ -131,6 +137,8 @@ const CreatePoints = () => {
       </header>
       <form onSubmit={hadleSubmit}>
         <h1>Cadastro do ponto de Coleta</h1>
+
+        <Dropzone onFileUpload={setselectdFile} />
         <fieldset>
           <legend>
             <h2>Dados</h2>

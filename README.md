@@ -5,4 +5,4 @@
 <h2>APP</h2>
 <img src="https://github.com/raphaom35/Ecoleta/blob/master/imgs/mobile1.jpg" width="250" height="380" align="left"/>
 <img src="https://github.com/raphaom35/Ecoleta/blob/master/imgs/mobile2.jpg" width="250" height="380" align="center"/>
-<img src="https://github.com/raphaom35/Ecoleta/blob/master/imgs/mobile3.jpg" width="250" height="380" align="right" />
+<img src="https://github.com/raphaom35/Ecoleta/blob/master/imgs/mobile3.jpg" width="250" height="380" align="center" />

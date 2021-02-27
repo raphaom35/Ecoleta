@@ -2,7 +2,7 @@
 # Ecoleta (React,React native) - TypeScripts
 > Cadastrar pontos de coletas
 
-![](<img src="https://github.com/raphaom35/Ecoleta/blob/master/imgs/web1.PNG" width="450" height="350" align="left"/> )
+![](./imgs/web1.PNG)
 
 ## Development setup
 

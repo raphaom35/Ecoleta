@@ -1,13 +1,18 @@
-# Ecoleta (React,React native) - TypeScripts
-<div>
-<img src="https://github.com/raphaom35/Ecoleta/blob/master/imgs/web1.PNG" width="450" height="350" align="left"/> 
-<img src="https://github.com/raphaom35/Ecoleta/blob/master/imgs/web2.PNG" width="450" height="350" align="right"/>
-</div>
-<br><br>
-<h2 align="center" >APP</h2>
-<div align="center" >
-<img src="https://github.com/raphaom35/Ecoleta/blob/master/imgs/mobile1.jpg" width="200" height="380" align="left"/>
-<img src="https://github.com/raphaom35/Ecoleta/blob/master/imgs/mobile2.jpg" width="200" height="380" align="center"/>
-<img src="https://github.com/raphaom35/Ecoleta/blob/master/imgs/mobile3.jpg" width="200" height="380" align="center" />
-</div>
 
+# Ecoleta (React,React native) - TypeScripts
+> Cadastrar pontos de coletas
+
+![](<img src="https://github.com/raphaom35/Ecoleta/blob/master/imgs/web1.PNG" width="450" height="350" align="left"/> )
+
+## Development setup
+
+Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+
+```sh
+yarn install
+yarn dev
+```
+
+Distributed under the XYZ license. See ``LICENSE`` for more information.
+
+[https://github.com/raphaom35/Ecoleta](https://github.com/raphaom35/Ecoleta)
